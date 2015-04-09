@@ -1,137 +1,142 @@
 <!DOCTYPE html>
- <html>
-    <head>
-        <title>Welcome To The Dark Side</title>
-    </head>
-    <style>
+<html>
+
+<head>
+    <title>Welcome To The Dark Side</title>
+</head>
+<style>
     body {
-        background: #7DC6CD;
-        color: #050505;
+        background: rgba(0, 0, 0, 0.79);
+        color: #000000;
         padding: 10px;
         font-family: bold;
     }
-
     p {
         width: 30px;
     }
-
     h1 {
         margin-top: 5px;
         margin-bottom: px;
     }
-    h3 {padding-left:100px;
-        font-size:24px;
+    h3 {
+        padding-left: 100px;
+        font-size: 24px;
     }
-    
     /* Main container area beneath menu */
+    
     .container {
         max-width: 900px;
-        margin:  auto;
+        margin: auto;
         background: #F5EEDB;
     }
-
     /* Content area within conatiner */
+    
     .content {
         padding: 10px;
         margin-left: 50px;
     }
-
     /* Left aligned sidebar */
+    
     .sidebar {
         width: 425px;
         float: left;
         padding: 10px;
     }
-
     .sidebar img {
         width: 400px;
     }
-
     /* Main menu */
+    
     nav {
-        background: #EF5029;
+        background: #05050;
         height: 50px;
-        max-width: 600px;
-        margin: 0 auto;
+        max-width: 300px;
+        margin: auto;
+        color: black;
     }
-
     nav ul {
         list-style-image: none;
         float: right;
     }
-
     nav ul li {
         display: inline;
         padding-right: 20px;
     }
-
     nav a {
         text-decoration: none;
-        color: #fff;
+        color:black;
     }
-
     /* Site Title */
+    
     nav h1 {
-        float: left;
+        float: middle;
         margin-top: 13px;
         margin-left: 10px;
         font-size: 21px;
-        color: #ffffff;
+        color: #FF0D11;
     }
-
     /* Portfolio page */
+    
     ul.portfolio {
         list-style-type: none;
         padding-left: 0;
     }
-
     ul.portfolio li {
         background: #fff;
         padding: 10px;
         border-radius: 10px;
         margin-bottom: 10px;
     }
-
     ul.portfolio li:hover {
         background: #eee;
     }
-
     .portfolio a {
         text-decoration: none;
         color: #454545;
     }
-    .about{
-        float:left;
+    .about {
+        float: left;
     }
-    .clear{
-        clear:both;
+    .clear {
+        clear: both;
     }
-    .about p{
-        font-weight:bold;
+    .about p {
+        font-weight: bold;
+        width: 300px;
     }
-    
 </style>
-    <body>
+
+<body>
 
     <div class="container">
-        <nav>About Max Cooper</nav>
-        <div class="sidebar"> 
-         <img src="http://uptownmessenger.com/wp-content/uploads/2013/01/carrollton-cohen.jpg">
-         
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <img src="http://uptownmessenger.com/wp-content/uploads/2013/01/carrollton-cohen.jpg">
+
         </div>
         <div class="about">
-          <h1>Max Cooper</h1>
-            <p>Bands Of Directors</p>  
+            <h1>Max Cooper</h1>
+            <p>Band Of Directors</p>
         </div>
         <div class="clear"></div>
         <div class="content">
-            
+
             <h3>Music</h3>
-            <ul><li>Writing Music</li></ul>
-            <ul><li>Learning New Things</li></ul>
-            <ul><li>Professional Drag Racer</li></ul>
-            
+            <ul>
+                <li>Writing Music</li>
+                <li>Learning New Things</li>
+             <li>Professional Drag Racer</li>
+            </ul>
+
         </div>
     </div>
-    </body>
+</body>
+
 </html>
