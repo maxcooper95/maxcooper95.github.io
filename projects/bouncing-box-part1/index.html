@@ -55,7 +55,9 @@
   	
 		box.text(points);
 		// TODO 3 / 4
-		update = function() {
+		update = function(){
+			console.log("the speed is currently", speed, "the position is", position);
+		
 			position = position + (speed * direction);
 		
 			if(position > boardWidth) {

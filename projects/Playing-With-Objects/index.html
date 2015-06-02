@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Playing With Objects</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        label {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        header {
+            margin-top: 20px;
+            font-size: 200%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="name">
+            <span class="label">Name:</span>
+            <input type="text" name="name" />
+        </label>
+    </div>
+    <div>
+        <label for="color">
+            <span class="label">Favorite Color:</span>
+            <input type="text" name="color" />
+        </label>
+    </div>
+    <button id="add">Add</button>
+    <header>People:</header>
+    <div id=peopleList>
+
+    </div>
+    <script>
+        (function() {
+            'use strict';
+            var name = $("[name=name]");
+            var color = $("[name=color]");
+            var peopleList = $("[id=peopleList]");
+
+            // Write your code below
+
+            // Returns a person object that has 2 properties:
+            // * name
+            // * color
+            var getPerson = function() {
+                return {
+                    "name": name.val(),
+                    "color": color.val(),
+                    
+                    
+                };
+           
+            };
+                
+            // Takes a person object and places a string on the page
+            var displayPersonInfo = function(person) {
+                  var string = person.name + " likes the color "+ person.color;
+                  
+                peopleList.append(
+                    $("<p>").text(string)
+                );
+            
+            };
+            // Clears the inputs so that another person can be added
+            // to the list
+            var clearInputs = function() {
+                name.val("")
+                color.val("")
+
+            };
+            // Click handler for the Add button, will run every time
+            // Add is clicked
+            $("[id=add]").on('click', function() {
+                var person = getPerson();
+                displayPersonInfo(person)
+                clearInputs();
+                console.log(person);
+            });
+        }).call();
+    </script>
+</body>
+
+</html>
